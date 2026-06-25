@@ -1,4 +1,4 @@
-from fastapi import FastAPI, Response, HTTPException, status, Depends
+from fastapi import FastAPI, Response, HTTPException, status, Depends, status
 # from fastapi.params import Body
 # from pydantic import BaseModel
 
@@ -63,7 +63,7 @@ app.include_router(auth.router)
 app.include_router(vote.router)
 
 
-@app.get("/")
+@app.get("/", )
 def root():
     return {"message": "hello fastAPI"}
 
