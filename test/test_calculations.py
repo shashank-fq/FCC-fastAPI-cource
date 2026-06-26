@@ -25,7 +25,7 @@ def test_subtract():
 
 
 def test_multiply():
-    assert multiply(4, 3) == 1
+    assert multiply(4, 3) == 12
 
 
 def test_divde():
@@ -58,7 +58,7 @@ def test_collect_intrest(bank_account):
 
 @pytest.mark.parametrize("num1, num2, expected", [
     (300, 200, 100),
-    (72, 40, 322),
+    (72, 40, 32),
     (12, 4, 8),
 ])
 
