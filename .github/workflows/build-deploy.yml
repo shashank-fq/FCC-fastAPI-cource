@@ -13,7 +13,7 @@ jobs:
       database_name: ${{secrets.DATABASE_NAME}} 
       database_username: ${{secrets.DATABASE_USERNAME}} 
       secret_key: ${{secrets.SECRET_KEY}} 
-      algorithm: ${{secrets.ALGORITHM}} 
+      algorithm: ${{secrets.ALGORITH}} 
       access_token_expire_minutes: ${{secrets.ACCESS_TOKEN_EXPIRE_MINUTES}} 
 
     services:
