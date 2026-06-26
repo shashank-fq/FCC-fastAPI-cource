@@ -14,12 +14,12 @@ from app.oauth2 import create_access_token
 from app import models
 # from alembic import command
 
-SQLALCHIME_DATABSE_URL = 'postgresql://postgres:dhisdat@localhost:5432/test_fastapi'
+# SQLALCHEMY_DATABSE_URL = 'postgresql://postgres:dhisdat@localhost:5432/test_fastapi'
 
 
-# SQLALCHIME_DATABSE_URL = f"postgresql://{settings.database_username}:{settings.database_password}@{settings.database_hostname}:{settings.database_port}/test_{settings.database_name}"
+SQLALCHEMY_DATABSE_URL = f"postgresql://{settings.database_username}:{settings.database_password}@{settings.database_hostname}:{settings.database_port}/test_{settings.database_name}"
 
-engine = create_engine(SQLALCHIME_DATABSE_URL)
+engine = create_engine(SQLALCHEMY_DATABSE_URL)
 
 TestingSessionLocal = sessionmaker(
     autocommit=False,
