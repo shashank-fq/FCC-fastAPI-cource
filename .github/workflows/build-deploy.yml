@@ -4,6 +4,16 @@ on: [push, pull_request]
 
 jobs:
   job1:
+    env: 
+      database_hostname: localhost
+      database_port: 5432
+      database_password: dhisdat
+      database_name: fastapi
+      database_username: postgres
+      secret_key: 09we786251evgf3987efbjkdw0v9c8svnkl689431n0ffu04n4134h3r34r4g4091h
+      algorith: HS256
+      access_token_expire_minutes: 60
+
     runs-on: ubuntu-latest
     steps:
       - name: pulling git repo
